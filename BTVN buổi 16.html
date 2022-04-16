@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        span {
+            background-color: aqua;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 0 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <span id="modul1" onclick="click1(this)">Khách sạn</span>
+
+        <span id="modul2" onclick="click2(this)">Trường</span>
+
+        <span id="moldul3" onclick="click3(this)">Food</span>
+    </div>
+    <p id="in1" style="display:none"></p>    
+    <p id="in2" style="display:none"></p>    
+    <p id="in3" style="display:none"></p>    
+
+
+    <script>
+        var KS = [
+            {
+                name: "Hà Nội Touris",
+                gia: 9000000,
+            },
+            {
+                name: "Phonix Hotel",
+                gia: 700000,
+            },
+            {
+                name: "nhà nghỉ gì cũng được",
+                gia: 500000,
+            },
+        ];
+        var School = [
+            {
+                name: "BÁCH KHOA",
+                diem: "26-29,35",
+            },
+            {
+                name: "KHTN",
+                diem: "26-28,1",
+            },
+            {
+                name: "Bưu Chính",
+                diem: "24,75-26,65",
+            },
+        ];
+
+        var food = [
+            {
+                name: "phở",
+                gia: "30k",
+            },
+            {
+                name: "bún chả",
+                gia: "35k",
+            },
+            {
+                name: "cơm tấm",
+                gia: "25k",
+            },
+        ];
+
+            document.getElementById("in1").style.border = "2px solid black";
+            document.getElementById("in1").style.width = "200px";
+            document.getElementById("in1").style.height = "150px";
+            document.getElementById("in1").innerHTML = "<ul>" + "<li>" + KS[0].name + "<br>" + KS[0].gia + "</li>" + "<li>" + KS[1].name + "<br>" + KS[1].gia + "</li>" + "<li>" + KS[2].name + "<br>" + KS[2].gia + "</li>" + "</ul>";
+
+            document.getElementById("in2").style.border = "2px solid black";
+            document.getElementById("in2").style.width = "200px";
+            document.getElementById("in2").style.height = "150px";
+            document.getElementById("in2").innerHTML = "<ul>" + "<li>" + School[0].name + "<br>" + School[0].diem + "</li>" + "<li>" + School[1].name + "<br>" + School[1].diem + "</li>" + "<li>" + School[2].name + "<br>" + School[2].diem + "</li>" + "</ul>";
+
+            document.getElementById("in3").style.border = "2px solid black";
+            document.getElementById("in3").style.width = "200px";
+            document.getElementById("in3").style.height = "150px";
+            document.getElementById("in3").innerHTML = "<ul>" + "<li>" + food[0].name + "<br>" + food[0].gia + "</li>" + "<li>" + food[1].name + "<br>" + food[1].gia + "</li>" + "<li>" + food[2].name + "<br>" + food[2].gia + "</li>" + "</ul>";
+
+        function click1(x) {
+            document.getElementById("in1").style.display = "block";
+            document.getElementById("in2").style.display = "none";
+            document.getElementById("in3").style.display = "none";
+           
+        }
+        function click2(x){
+            document.getElementById("in2").style.display = "block";
+            document.getElementById("in1").style.display = "none";
+            document.getElementById("in3").style.display = "none";
+            
+        }
+        function click3(x){
+            document.getElementById("in3").style.display = "block";
+            document.getElementById("in2").style.display = "none";
+            document.getElementById("in1").style.display = "none";
+           
+        }
+    </script>
+</body>
+
+</html>

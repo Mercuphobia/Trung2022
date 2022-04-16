@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var array = [12, 3, 4, 5, 6, 7];
+            var array2 = [12, "hello", 29, true, false];
+            var array = ["hi","hello","xin chao","hola"];
+            // trùng tên var thì chạy biến var đc tạo gần nhất
+            // let thi k cho tạo biến cùng tên
+            // const thì khởi tạo giá trị cứng luôn.
+            let w =20;
+            const v = 10;
+
+            document.write(array[0]+ " " + array[2] + " "+ array[3]);
+            // value : object(đối tượng); dùng dấu {}, prpperty(bien con vơi gia trị)
+            var xemay = {
+                mau: "red",
+                gia: 1000000000,
+                namsx:2002,
+                do: "bô",
+            }
+            document.write(
+                "<h1>" + "mua xe máy" + "</h1>" + 
+                "<span>" + "màu :" + xemay.mau + "</span>" + "<br>" +
+                "<span>" + "giá :" + xemay.gia + "VND" + "</span>" + "<br>" +
+                "<span>" + "năm sản xuât :" + xemay.namsx + "</span>" + "<br>" +
+                "<div>" + "bộ phận độ :" + xemay.do + "</div>"
+            )
+
+            var ArrinObj = {
+                arrcon : ["a", "b","2002",2020,11]
+
+            }
+
+            console.log(ArrinObj.arrcon[2])
+
+            var ObjinArr = [
+                {
+                    khoa: "VT",
+                    lop: "VT-05B",
+                },
+                {
+                    khoa: "DT",
+                    lop: "DT-04B",
+                }
+            ];
+            console.log("Name :" + ObjinArr[0].khoa)
+        </script>
+
+    </body>
+</html>

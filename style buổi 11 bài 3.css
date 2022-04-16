@@ -1,0 +1,37 @@
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pi{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.layout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.layout>div {
+    width: 30%;
+    margin: 1.25%;  
+}
+.layer1{
+    background-color:rgb(242, 46, 242);
+    color:white;
+    width:100%;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    line-height: 275px;
+    font-size: 50px;
+}
+.more{
+    border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    width: 100px;
+    height:50px;
+    text-decoration: none;
+    line-height: 50px;
+}

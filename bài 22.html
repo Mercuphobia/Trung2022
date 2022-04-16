@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 22</title>
+</head>
+<body>
+    <script>
+        var b = "20";
+        Number(b);
+        console.log("biến a là",typeof Number(b));
+        var c = {
+            name: "hello",
+        };
+        console.log("biến c là",typeof c);
+        var so = 2.34;
+        var songuyen = parseInt(so);
+        console.log("so nguyen", songuyen);
+        var sothuc = parseFloat(so);
+        console.log("so thực",sothuc);
+
+        var x1 = 2.34;
+        var x2 = 4.56;
+        var x3 = 6.89;
+        var sum_Int = parseInt(x1) + parseInt(x2) + parseInt(x3);
+        var sum_Float = parseFloat(x1) + parseFloat(x2) + parseFloat(x3);
+        console.log("sum INT",sum_Int);
+        console.log("sum Float",sum_Float);
+
+        var a = 20020020;
+
+        String(a);
+        console.log("chuyển từ num >> string",String(a));
+
+        var n1 = 2.34455535;
+        console.log(n1.toFixed(4)); // làm tròn số
+        var n2 = "hoa hong";
+        var chuHoa = n2.toLocaleUpperCase(); // ép kiểu in hoa ;in thường thì dùng lowercase
+        console.log(chuHoa);
+
+        var cutString = n2.split();
+        console.log("cut",cutString);
+        var cutString2 = n2.split("a");
+        console.log("cut chữ a",cutString2);
+
+        // những hàm giống for nhưng dễ dùng hơn
+        // map , filter, reduce, find : chỉ làm việc với mảng
+
+        var arr = ["con gà", "con lợn","con cá","con vịt","con nhộng"];
+        // arr.map()
+        
+        // callBack: hàm dùng trong hàm
+        function myFunction(a,b){
+            return a + b;
+        }
+        function MyFunction02(){
+            var k = 10;
+            var l = 6;
+            var k1 = k + l;
+            var k2 = k - l;
+            return myFunction(k1,k2);
+        }
+        console.log(MyFunction02());
+
+        arr.map(function(item,index){
+            console.log(index);
+            console.log(item);
+        });
+
+        
+        arr.filter(function(item,index){ /// lọc
+            console.log(item == "con cá");
+        });
+
+        // * tông hợp lại kiến thức 
+        // DOM selector: document.getElementById()
+        // DOM HTML: innerHTMl, innertext , .value;
+        // DOM style: .style.eg... = 20px;
+        // DOM Listener: lắng nghe sự kiện
+
+        // giá trị String Number Obj Array Variable
+        // in : 
+        // console.log
+        // selector 
+        // document.write("<h1>"+"</h1>");
+        // function ka(a=10,b="trung")
+
+        // loop : for, while duyệt mảng hoặc so sánh, kiểm tra
+        // condition else , if , else if : xét điều kiện, kiểm tra
+        // building function
+        // alert()
+        // console.log(first)
+        //string hàm buiding: cắt thêm bớt 
+        
+        // ép kiểu , làm tròn , lấy nguyên ...
+        // đo độ dài
+        // arr + loop
+        
+       // ES6 + typescript + React/Vuejs/ Angular
+       // SASS + tailwind + boostrap
+
+    </script>
+    
+</body>
+</html>

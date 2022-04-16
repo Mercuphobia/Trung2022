@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 23: jquery</title>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    BTVN  bài 22 làm to do list và thanh menu và đồng hồ<br>
+    bài 23: jquery là một thư viện của JS <br>
+    thư viện là đc cải tiến, viết code đơn giản hơn, cách viết khác k giống viết thường<br>
+    Framework giống 1 cái khung có mọi thứ trong đó<br>
+    <div class="test">
+        hello
+    </div>
+    <div class="test02">
+        hello2
+    </div>
+    <div class="test03">
+        hello world
+    </div>
+    <div class="test04">
+        wellcome to the world
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".test").click(function(){
+                $(".test02").hide();
+            });
+        });
+        $(document).ready(function(){
+            var demo = $(".demo02").text("")
+            $(".test03").html("xin chào Trung");
+            $(".test03").click(function(){
+                $(this)
+                    .text("thay đổi giá trị nè")
+                    .css({"color":"red","fontSize":"20px", "border":"2px solid black"});
+            });
+            $(".test03").click(function(){
+                $(".test04").toggle(3000); // toggle vừa ẩn vừa hiện
+            });
+        });
+
+        // DOM SELECTOR
+        // JS : document.getElementById("");
+        // JQuery
+        // $("");
+
+        // DOM HTML
+        // JS: .innerHTML, .innerText, .value;
+        // JQuery .text, .html, .val
+
+        // DOM Event
+        // JS onclick onmouseover onchange
+        // Jquery: click(function(){.....})
+
+        // DOM STYle
+        // JS documentgetElementById("").style. = "";
+        // $("").css("color", "red");
+
+        // Event dùng để ẩn
+        // hide và show
+
+    </script>
+
+    
+</body>
+</html>

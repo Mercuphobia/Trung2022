@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="inra"></p>
+        
+        <script>
+            var a,b;
+            a=prompt("Nhập vào số a");
+            b=prompt("Nhập vào số b");
+            a = parseInt(a);
+            b = parseInt(b);
+            var n = a + b;
+            if(n >= 10){
+                document.write("tổng lớn hơn 10" + "<br>" + "bạn hãy nhập lại giá trị a và b");
+            }
+            else if(n < 0){
+                document.write("tổng nhỏ hơn 0" + "<br>" + "bạn hãy nhập lại giá trị a và b");
+            }
+            else if(n === 2 || n === 0){
+                document.write("tổng chẵn là 2 hoặc 0");
+            }
+            else if(n === 7 && n >=0 ){
+                document.write("tổng là số 7");
+            }
+            else if(n % 2 === 0){
+                document.write("tổng là số chẵn" + " " + "có giá trị bằng: ",n);
+            }
+            else if(n % 2 === 1){
+                document.write("tổng là số lẻ" + " " + "có giá trị bằng: ",n);
+            }
+        </script>
+    </body>
+</html>

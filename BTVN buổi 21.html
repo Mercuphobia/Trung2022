@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <label>Tên món ăn</label>
+            <input  id="ten">
+        </tr>
+        <tr>
+            <label>gia</label>
+            <input  id="gia">
+        </tr>
+    </table>
+    <div id="container">
+        <h1>thêm thực đơn và báo giá</h1>
+        <button id="out" onclick="AddData()">Add</button>
+        <p id="in1"></p>
+        <p id="in2"></p>
+        <p id="in3"></p>
+    </div>
+    <script>
+        var food = [
+            {
+                name: "phở",
+                cost: "30k",
+            },
+            {
+                name: "cơm tấm",
+                cost: "35k",
+            },
+        ];
+        var data = [];
+        var list = this.data;
+
+        document.getElementById("container").style.border = " 2px solid black";
+        document.getElementById("container").style.width = " 500px";
+        document.getElementById("container").style.height = " 550px";
+        document.getElementById("container").style.textAlign = " center";
+        document.getElementById("in1").style.border = "2px solid black";
+        document.getElementById("in1").style.width = " 100px";
+        document.getElementById("in1").style.height = " 80px";
+        document.getElementById("in2").style.border = "2px solid black";
+        document.getElementById("in2").style.width = " 100px";
+        document.getElementById("in2").style.height = " 80px";
+        // document.getElementById("in1").innerHTML = "Tên món ăn" + food[0].name + "<br>" + "Giá : " + food[0].cost;
+        // document.getElementById("in2").innerHTML = "Tên món ăn" + food[1].name + "<br>" + "Giá : " + food[1].cost;
+        for(var i=0;i<=food.length;i++){
+            document.getElementById("in1").innerHTML = "Tên món ăn" + food[i].name + "<br>" + "Giá : " + food[i].cost;
+        }
+
+        function AddData(){
+            var ten = document.getElementById('ten').value;
+            var gia = document.getElementById('gia').value;
+            var item = {
+                name: ten,
+                cost: gia,
+            };
+            this.data.push(item);
+            var table = '<table border = "1"><thead><th>ten</th><th>gia</th></thead><tbody>';
+            for(var i=0; i< list.length; i++){
+                table += '<tr>';
+                table += '<td>' + list[i].name + '</td>';
+                table += '<td>' + list[i].cost + '</td>';
+                table += '</tr>';
+            }
+            table += '<tbody><table>';
+            document.getElementById("in3").innerHTML = table;
+        }
+       
+
+       
+        // function AddData(){
+        //     var a = document.getElementById("add1").value;
+        //     var b = document.getElementById("add2").value;
+
+
+        // }
+
+
+
+    </script>
+</body>
+</html>

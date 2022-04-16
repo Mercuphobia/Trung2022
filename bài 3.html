@@ -1,0 +1,72 @@
+<!DOCTYpe html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        span {
+            color: aqua;
+        }
+    </style>
+    <link href="style.css">
+</head>
+
+<body>
+    block :không xuống dòng(chiếm hết hàng)(các thẻ div,p,h1)
+    Inine : cho thẻ cx thuộc tính ở chung( thẻ i,b,u,span)
+    <div></div> là thẻ bố cục,bao bọc các thẻ con, đựng các thẻ con đôi lúc tự đựng nó
+    <span></span> là thẻ giống thẻ p nhưng không xuống dòng
+
+    <p>Hello p</p>
+    <p>Hello b</p>
+
+    <span>Hello span</span>
+    <span>Hi span</span>
+    <div>Hello div</div>
+    <span>hello</span>
+
+    <div style="background-color:yellow;">
+        <div style="color:aqua">bưu chính viễn thông</div>(chứa thuộc tính của thẻ con trước thế bố sau)
+        <div>điện tử viễn thông</div>
+    </div>
+    <span style="background-color:green;">
+        <span>học viện công nghệ BCVT</span>
+        <span>nguyễn trãi,hà đông</span>
+    </span>
+
+    Quotation
+
+    <!--thẻ ghi chú (chức năng như // trong C++)-->>
+    <blockquote>- thẻ trích dẫn,thẻ dùng cho báo chí chức năng tự thụt vào
+        Lorem(20 ấn enter)(spam ra 1 đoạn văn để thử )
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, facilis animi consequuntur eos similique
+        delectus vero pariatur omnis fuga ab eligendi blanditiis, assumenda iste adipisci fugit? Et unde voluptatum
+        culpa quaerat repellendus sed magnam placeat architecto libero. Eaque, hic ad. Assumenda illum quos enim
+        molestiae laboriosam amet quae, odit asperiores?
+
+    </blockquote>
+
+    cách comment nhanh  bôi đen+CTRL+?
+
+    - cách dùng màu : có 3 cách
+    c1 p style=" color: màu bằng tiếng anh".
+    <p style="color:red">RED</p>
+    c2 p style=" rgb(số)"
+    <p style="color:rgb(100,150,255)">màu RGB</p>
+    c3 p style="color: #f0f0f0"\
+    <p style="color: #ff58ff">Màu Hex</p>
+
+    <!--Dùng CSS cơ bản --> 
+    có 3 cách CSS cơ bản 
+    c1 -Inline dùng style,CSS thẳng vào cái thẻ đấy luôn
+    +ưu điểm là tác động trực tiếp dc vào thẻ nhưng làm thẻ dài, và k thể thay đổi style
+    c2 -Internal: tạo 1 thẻ style để trong thẻ head
+    +giúp nhanh nhưng làm code dài hơn
+    c3 -External: tạo file đuôi .CSS sau đó lồng vào HTML ở head
+    +đc sử dụng phổ biến nhất
+
+    thứ tự ưu tiên: ở c2 à c3 cái nào ở trc thì ưu tiên trước
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align:center;
+            }
+            #hcn{
+                animation-name: hcn;
+                animation-duration: 3s;
+                animation-iteration-count:infinite;
+            }
+            @keyframes hcn{
+                from{
+                    transform : rotate(0deg)
+                }
+                to{
+                    transform : rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="clic1(this)">click</button>
+
+        <div id="hcn" onclick="hcn(this)" style="display:none"></div>
+        <select id="select" onchange="change(this)" style="display:none">
+            <option value="26,65">CNTT</option>
+            <option value="26,25">ATTT</option>
+            <option value="26,5">TTDPT</option>
+            <option value="25,75">CNDPT</option>
+            <option value="25,25">VT</option>
+            <option value="24,75">DT</option>
+        </select>
+        <button id="next" onclick="next(this)" style="display:none" >Next</button>
+        <input type="text" id="text" style="display:none"/>
+        <button id="innoidung" onclick="noidung()" style="display:none">in</button>
+        <h1 id="noidung"></h1>
+
+        <script>
+            function clic1(x){
+                document.getElementById("hcn").style.display = "block";
+                document.getElementById("hcn").style.border = "3px solid red";
+                document.getElementById("hcn").style.width = "100px";
+                document.getElementById("hcn").style.height = "75px";
+                document.getElementById("hcn").style.backgroundColor = "blue";
+                x.style.display = "none";
+            }
+
+            function hcn(x){
+                document.getElementById("select").style.display = "inline"; 
+                document.getElementById("next").style.display = "inline";
+                x.style.display = "none";
+            }
+            function change(x){
+                document.getElementById("noidung").innerHTML = "điểm thi năm 2020 khoa: " + x.value;
+            }
+            function next(x){
+                x.style.display = "none";
+                document.getElementById("select").style.display = "none";
+                document.getElementById("noidung").style.display = "none";
+                document.getElementById("text").style.display = "inline";
+                document.getElementById("innoidung").style.display = "inline";
+            }
+            function noidung(){
+                document.getElementById("noidung").innerHTML = document.getElementById("text").value;
+                document.getElementById("noidung").style.display = "block";
+
+            }
+        </script>
+    </body>
+</html>

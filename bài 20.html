@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <p id="test"></p>
+
+            <script>
+                // for và while: kiểm tra điều kiện trước rồi mới chạy
+                // do while thì chay trước rồi kiểm tra điều kiện sau > luôn chạy dc 1 lần nếu sai đk
+
+                // Date time
+                var time = new Date()
+                document.write(time);
+                document.write("<br>")
+                let hour = time.getMinutes();
+                let month = time.getMonth();
+                let date = time.getDate();
+                let MS = time.getMilliseconds();
+                document.write(hour + "<br>");
+                document.write(month + 1 + "<br>");
+                document.write(date + "<br>");
+                document.write(MS + "<br>");
+
+
+                // tháng thì cộng thêm 2 thì mới ra đúng.
+                document.getElementById("test").innerHTML = time;
+
+                // math : làm tròn toán học
+                var a = 2.4;
+                document.write("Round :",Math.round(a) + "<br>");
+                document.write("Floor ",Math.floor(a) + "<br>");
+                document.write("ceil ",Math.ceil(a) + "<br>");
+                document.write("random ",Math.random() + "<br>");
+                document.write("xổ số: ",Math.floor(Math.random() * 6 + 1 ) + "<br>")
+
+
+
+
+
+            </script>
+        </body>
+    </head>
+</html>

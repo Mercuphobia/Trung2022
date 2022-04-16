@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #caculation{
+                padding: 4% 0;
+            }
+            #kq{
+                margin: 20px;
+                background-color:antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="caculation">
+            <input type="text" id="no1" />
+            <br>
+            <br>
+            <input type="text" id="no2" />
+            <br>
+            <br>
+            <br>
+            <button onclick="tong()">+</button>
+            <button onclick="hieu()">-</button>
+            <button onclick="tich()">X</button>
+            <button onclick="thuong()">/</button>
+            <button onclick="du()">%</button>
+            <p>=</p>
+            <p id="kq"></p>
+        </div>
+        <script>
+            var a = confirm("bạn có muốn sử dụng máy tính thần kì của DORAEMON không");
+            if(a === false){
+                document.getElementById("caculation").style.display = "none";
+                document.write("không dùng thì có cái nịt nhé :))")
+
+            }
+            else {
+                document.getElementById("caculation").style.border = "2px solid black";
+                document.getElementById("caculation").style.width = "250px";
+                document.getElementById("caculation").style.height = "200px";
+                document.getElementById("caculation").style.backgroundColor = "aqua";
+                document.getElementById("caculation").style.textAlign = "center";
+                document.getElementById("kq").style.border = "1px solid black";
+                document.getElementById("kq").style.width = "200px";
+                document.getElementById("kq").style.height = "20px";
+
+                function tong(){
+                    var x = document.querySelector('#no1').value;
+                    var y = document.querySelector('#no2').value;
+                    x = parseFloat(x);
+                    y = parseFloat(y);
+                    var tong = x + y;
+                    document.getElementById("kq").innerHTML = tong;
+                }
+                function hieu(){
+                    var x = document.querySelector('#no1').value;
+                    var y = document.querySelector('#no2').value;
+                    x = parseFloat(x);
+                    y = parseFloat(y);
+                    var hieu = x - y;
+                    document.getElementById("kq").innerHTML = hieu;
+                }
+                function tich(){
+                    var x = document.querySelector('#no1').value;
+                    var y = document.querySelector('#no2').value;
+                    x = parseFloat(x);
+                    y = parseFloat(y);
+                    var tich = x * y;
+                    document.getElementById("kq").innerHTML = tich;
+                }
+                function thuong(){
+                    var x = document.querySelector('#no1').value;
+                    var y = document.querySelector('#no2').value;
+                    x = parseFloat(x);
+                    y = parseFloat(y);
+                    var thuong = x / y;
+                    document.getElementById("kq").innerHTML = thuong;
+                }
+                function du(){
+                    var x = document.querySelector('#no1').value;
+                    var y = document.querySelector('#no2').value;
+                    x = parseFloat(x);
+                    y = parseFloat(y);
+                    var du = x % y;
+                    document.getElementById("kq").innerHTML = du;
+                }
+            
+            }
+            
+
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div style="text-align:center">
+            <form >
+                <fieldset>
+                    <tr width="70" height="70">
+                        <td colspan="2" style="color:brown;text-align:center">Đăng nhập</td>
+                    </tr>
+                    <table style="background-color:aqua"  border="1" width="400">
+                        
+                        <tr>
+                            <th>
+                                <lable>Mã người dùng:</lable>
+                            </th>
+                            <th>
+                                <input type="text">
+                            </th>
+                        </tr>   
+                        <tr>
+                            <td>
+                                <label>Mật khẩu:</label>
+                            </td>
+                            <td>
+                                <input type="password">
+                            </td>
+                        </tr>  
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Đồng ý</button>
+                            </td>
+                        </tr> 
+                    </table>
+                </fieldset>
+                
+            </form>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <form >
+                <table style="background-color:aqua"  border="1" width="400">
+                    <tr width="70" height="70">
+                        <td colspan="2" style="color:brown;text-align:center">Đăng nhập</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <lable>Mã người dùng:</lable>
+                        </th>
+                        <th>
+                            <input type="text" id="username">
+                        </th>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <label>Mật khẩu:</label>
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button onclick="username1.innerHTML=document.getElementById('username').value">Lưu</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                           
+                            <p id="username1"></span>
+                            
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <script>
+            function ok(){
+                document.getElementById("username1").innerHTML = document.getElementById("username").value;
+            }
+            
+        </script>
+       
+    </body>
+</html>

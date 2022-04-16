@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+            p{
+                color:aqua;
+            }
+            .demo{
+
+            }
+            #demo{
+
+            }
+            .demo,.demo02,.demo03,.demo04,#demo {
+                color: brown;
+            }
+            .test01 {
+                text-align: center;
+                background-color:aqua;
+                background-image: url("anh.jfif");
+                height: 50px;
+                background-repeat: no-repeat;
+                /* background-repeat: no-repeat; không lặp lại */
+                background-size: 100Px 100px;
+                /* background-size: contain;cover,,ví dụ ở trên lần lượt là width và height 100%: đây là dộ phủ */
+                height: 600px;
+                background-position: center;
+                /* background-position: center;top,right,left : vị trí của ảnh chạy bên trong cái thẻ*/
+                background-attachment: fixed;
+                /* background-attachment: fixed; kéo cái ảnh theo khi lăn xuống */
+
+            }
+            .test-02{
+                border: 3px solid red;
+                /* border: 3px solid red; tạo bảng và các thuôc tính chỉ top bottom right,left */
+                border-radius:2px;
+                /* border-radius: 12px; bo tròn các góc */
+            }
+        </style>
+    </head>
+    <body>
+        
+        ID đc ưu tiên nhất rồi đén class rồi element
+        select chọn thẻ đó thê hoạt động cho thẻ đó
+        <!--*{} setup cho css-->
+        <p></p>
+        <p class="demo">142</p>
+        <p id="demo">1</p>
+        <p id="demo02">111</p>
+        <p id="demo03">111</p>
+        <p id="demo04">111</p>
+
+        xự sắp xếp của các thẻ
+        CSS chạy từ trền xuống 
+        nếu dùng lồng thẻ thì thẻ con đc ưu tiên trước
+        _cách viết tất: nhanh nhất
+       + ul>li*10 enter
+
+
+       + .container>.child>.demo enter
+       comment ở CSS khác bên html 
+       /* ghi chú*/ nhanh Ctrl + ?
+       <!-- <div class="test01">
+           <h1>Hello !!!!</h1>
+          
+           thẻ div ở 
+       </div> -->
+
+       <div class="test-02">
+           Hello
+       </div>
+
+       <!--Margin & padding-->
+
+       <p sytle="margin-top: 20px; ">Title</p>
+
+       <!--shorthand-->
+       <p style="margin:20px 15px 5px 10px">BEE</p> 
+       <p style="margin:20px 15px 25px">DOG</p> 
+       <p style="margin:20px 26px">CAT</p> 
+       trên phải giữa trái 3 sô thì trên phải trái
+       <nav>
+        <ul style="list-style-type: none;">
+            <li style="float: left; margin-left: 10px">
+             <a href="">Tin tức</a>
+         </li>
+            <li style="float: left; margin-left: 10px"> 
+             <a href=> Thể thao</a>
+         </li>
+            <li style="float: left; margin-left: 10px">
+             <a href="" >Thời tiết</a>
+         </li>
+            <li style="float: left; margin-left: 10px">
+             <a href=""> Game</a>
+         </li>
+            
+        </ul>
+       </nav>
+
+       
+    </body>
+</html>

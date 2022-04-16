@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            #thẻ03{
+                background-color: red;
+                padding: 50px;
+                margin: 20px; <!--thẻ inline khi dùng margin k bị đẩy-->
+            }
+        </style>
+        <style>
+            #therdiv{
+                background-color : yellow;
+                padding : 20px;
+                margin :400px;
+            }
+                .demo02 {
+                    color : red;
+                }
+                .demo03 {
+                    font-size: 30px;
+                }
+        </style>
+    </head>
+    <body>
+        thể list dùng cho các menu (cực kì quan trọng)
+        có 3 loại 1 đếm đc, dùng kí tự,không đếm đc 
+        <!--order list: đếm đc(dùng số)-->
+        <ol type="I">
+            <!--list-->
+            <li>
+                Coca
+            </li>
+            <li>
+                Coffe
+            </li>
+        </ol>
+
+  <!--unorder list:dung kí tự-->
+        <ul style="list-style-type:circle"><!--CSS này chỉ dùng cho thẻ ul-->
+            <li>
+                Hot pot
+            </li>
+            <li>
+                Hot đog
+            </li>
+        </ul>
+
+ <!--Desription list : miêu tả-->
+        <dl><!--ít dùng-->  
+            <dt>
+                <!--Desription title-->
+                Menu:
+            </dt>
+            <dd>
+                <!--desription Detail-->
+                Coffe
+            </dd>
+            <dd>
+                <!--desription Detail-->
+                coca
+            </dd>
+        </dl>
+
+        <!--Margin <!--Quan trọng(CSS)--> :là khoảng cách từ border này sang border khá>
+        <span style="background-color:red;padding :20px;">1</span>
+        <span style="background-color:blue;padding :20px">2</span>
+        <!--Padding: khoang cách từ nội dung(contain) tói border-->
+        <span id="thẻ03">3</span>
+
+        <div id="thediv">MERCUPHOBIA</div>
+
+        Class và id
+        -class là một dạng đặt tên nhưng phòng phú hơn id
+        <!--selector :(class name)-->
+        <!--Element(thẻ)-->
+        <!--ID-->
+        <!--class-->
+        <!--*(chọn tất cả các thẻ)-->
+
+
+
+        class: đặt tên để gọi k bị lặp lại và có thể dùng đi dùng lại, đặt dùng tên là dùng lại đc(khi gọi dùng dấu .tên thẻ) 
+        id thường dùng cho thẻ cha và dùng 1 lần k nên dùng đi dùng lại
+        <p class="demo02"> Lê Đức Trung</p>
+        mutilclass nhiều tên nhừng dùng đc nhiều thuộc tính
+        ưu tiên thuộc tính id trc class sau rồi đến gần 
+        id >> class >> element
+        VD
+        <span class="demo02 demo03">BCVT</span>
+
+        thẻ <<iframe>> lông thẻ người ta vào thẻ mình và là mã nhúng
+
+            <iframe src="https://www.youtube.com/embed/l6Wv803zRcc">sfajdfhklsjfhaskdflasdf</iframe>
+            <iframe src="https://kenh14.vn/">adjfasd;fkjas;dfkjas;fjkas</iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l6Wv803zRcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>djhfladhfjkasdfhkasjhflaf</iframe>
+
+    </body>
+
+</html>

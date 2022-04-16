@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    margin: auto;
+}
+nav{
+    display: flex;
+    padding: 10px 0;   
+}
+nav a{
+    color:gray;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 20px;
+}
+.left{
+    margin-left: 5%;
+    width:50%;
+}
+.right{
+    width:50%;
+    margin-right: 5%;
+}
+.banner{
+    background-image: url(./AnhLon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:500px;
+    position:relative;
+}
+section{
+    background-color: rgb(197, 197, 197);
+}
+.article{
+    width:90%;
+    padding-top: 20px;
+    height:400;
+}
+.article>h3, .article>p {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.content-banner{
+    position:absolute;
+    color:white;
+    top:25%;
+    left:5%
+}
+.layer{
+    display:flex;
+    flex-flow: row wrap;
+}
+.layer > div{
+    width:30%;
+    margin: 1.25%;
+}
+.layer > div >img{
+    padding-bottom: 25px;
+}
+footer{
+    background-color: whitesmoke;
+}
+.last{
+    width:90%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.last > div{
+    width:30%;
+    margin:1.25%;
+}
+div a{
+    text-decoration: none;
+}

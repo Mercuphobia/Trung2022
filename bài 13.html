@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* @keyframes ani02{
+                from {
+                    background-color:red;
+                    width:100px;
+                }
+                to {
+                    background-color: yellowgreen;
+                    width: 300px;
+                }
+            }
+            @keyframes ani03, ani02{
+                0% {background-color: red; left: 0px; top :80px;}
+                25% {background-color:yellow;left:200px;top:200px;}
+                50% {background-color:blue;left:0px;top:200px;}
+                75%{background-color:blue;left:0px;top:200px;}
+                100%{background-color:blue;left:0px;top:200px;}
+            }
+            @media screen and (max-width: 1020px) {
+                body{
+                    background-color:greenyellow;
+                }
+            } */
+                
+            div{
+                width:100px;
+                height:100px;
+                background-color:aquamarine;
+                animation-name: ani02;
+                animation-duration: 4s;
+                position:relative;
+                animation-iteration-count: infinite;
+            }
+            p{
+                width:100px;
+                height:100px;
+                background-color:aquamarine;
+                animation-name: ani03;
+                animation-duration: 4s;
+                position:relative;
+                transform: translate(300px,300px);
+            }
+            .flex-box{
+                display: flex;
+                padding: 15px;
+            }
+            .test{
+                background-color: aquamarine;;
+            }
+        </style>
+    </head>
+    <body>
+        animation. và photoshop cơ bản và resposive
+        <div></div>
+        <p>dùng transform và rotate (dùng độ)</p>
+        FLEX-BOX: dùng cho thẻ cha kích hoặt bằng cách cho thẻ cha display: flex <br>
+        <div class="flex-box">
+            <div class="test" style="margin: 10px"></div>
+            <div class="test" style="margin: 10px"></div>
+            <div class="test" style="margin: 10px"></div>
+            <div class="test" style="margin: 10px"></div>
+        </div>
+
+    </body>
+</html>

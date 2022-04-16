@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> bài 7:Tiếp bài form</title>
+    </head>
+    <body>
+        select : tạo một bảng trượt để chọn 
+        kết hợp input để nhập và kéo xuống.
+        <form>
+            <label for="">Khoa</label>
+            <input type="text">
+            <select size="4" multiple>
+                <option value="red">viên thông</option><!--thuộc tính value dùng trong jvs để trả giá trị về cho jv-->
+                <option>điện tử</option>
+                <option value="black" selected>công nghệ thông tin </option><!--selected là vào tự động chọn cho luôn-->
+                <option>an toàn thông tin</option>
+                <option>truyền thông đa phương tiện</option>
+                <option>công nghệ đa phương tiện</option>
+               
+            </select>
+            <textarea name="comment" row="20" cols="30">Nội dung bài viết</textarea>
+            <!--select chỉ chọn đúng nội dung ở trong nó -->
+            <!--datalisst thì có thể tạo thêm giá trị  ngoài những giá trị có sẵn-->
+
+
+            kết hợp select với input 
+            <label for="">Home:</label>
+            <input list="abc">
+            <datalist id="abc">
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+
+                <fieldset>
+                    <legend>Khai báo y tế</legend>
+                    <label for="">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                </fieldset>
+            </datalist>
+
+            <label for="">Vùng miền</label>
+            <select>
+                <optgroup label="miền trung"><!--optgroup là chú thích thêm cho các lựa chọn-->
+                    <option>Nghệ An</option>
+                    <option>Thanh Hóa</option>
+                    <option>Hà Tĩnh</option>
+                </optgroup>
+                <optgroup label="miền nam">
+                    <option>Bến Tre</option>
+                    <option>Kiên Giang</option>
+                    <option>Vũng Tàu</option>
+                    <option>Đồng Tháp</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <br>
+            <!--UI-->
+            <label for="">Họ và tên</label>
+            <input type="text" value="lê" disabled><!--gán giá trị sẵn và disable thì k cho sửa-->
+            <br>
+            <input type="text" value="lê" readonly><!--chỉ đc đọc k sửa đc-->
+            <br>
+            <input type="text" value="lê" size="25">
+            <br>
+            <input type="text" value="lê" maxlength="6"><!--giới hạn kí tự đc nhập-->
+            <br>
+            <br>
+            <br>
+            <!--valida-->
+            <input type="text" value="lê" required><!--bắt buộc phải nhập-->
+            <input type="text" placehoder="Tim kiếm..."><!--chú thích-->
+            <input type="password" autocomplete ><!--tự động lưu và nhập lại -->
+            <input type="text" pattern="[A-Za-z0-9]{4}" title="sai kí tự" ><!--đặt yêu cầu vào input -->
+            <br>
+            <form autocomplete="on">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname"><br><br>
+
+
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <input type="submit">
+            </form>
+            
+
+
+            <input type="submit">
+        </form>
+
+        <br>
+
+        trang trí cho form đẹp hơn (fieldset và legend) nó là cái khung bao bọ form của mình
+
+        <form>
+            <fieldset></fieldset>
+        </form>
+
+
+    </body>
+</html>

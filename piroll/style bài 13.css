@@ -1,0 +1,282 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    margin: auto;
+} 
+nav{
+    display:flex;
+    padding: 10px 0;
+}
+header{
+    height: 550px;
+    background-image: url(./anh/anh\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color:blue;
+}
+.logo{
+    width:50%;
+    padding-left: 5%;
+}
+.nav1{
+    width:50%;
+    font-size: 18px;
+}
+.content1{
+    padding-left: 60%;
+    margin-top: 100px;
+}
+.content1 > h2, .content1 > p, .content1 > a{
+    padding: 15px 0px;
+}
+div > a{
+    padding: 10px;
+}
+.more{
+    background-color:aqua;
+    height: 30px;
+    width:75px;
+}
+.modul1{
+    text-align: center;
+    margin:auto;
+    height:400px;
+    padding: 50px;
+}
+.modul1 > h2, .modul1 > div, .modul1 > image{
+    padding: 40px 0px;
+}
+.skills .skills-content{
+    display:flex;
+    background-color: #F8F9F9;
+}
+.skills-content > img{
+    width:50%;
+}
+.skills-content > .skills-layer{
+    padding :20px 0px;
+}
+.skills .skills-layer progress {
+    width: 550px;
+    height: 7px;
+    color: #23d3cd;
+}
+.sticker1{
+    background-color: aqua;
+    height:150px; 
+}
+.layer1 > .nen{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 50px 0px;
+}
+.img img, .img02 img{
+    width:100%;
+    display:block;
+}
+.img, .img02{
+    display:flex;
+}
+.img+div, .img02+div{
+    background-color:whitesmoke;
+    text-align: center;
+    font-size: 13px;
+    padding: 2% 0;
+}
+.video{
+    padding:4% 0;
+}
+.video > h2, .video > p{
+    padding: 2% 0;
+}
+.video iframe{
+    width:80%;
+    height:600px;
+}
+.video > h2, .video > p, .video > iframe{
+    justify-content: center;
+    display:flex;
+}
+
+#icon>div {
+    display: flex;
+    text-align: center;
+    padding: 3% 0;
+}
+#icon>div>div>div{
+    padding: 5%;
+}
+#icon {
+    background-color: #F5F5F5;
+    color: rgb(134, 133, 133);
+}
+#icon i {
+    width: 44px;
+    height: 45px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+#icon h5 {
+    color: rgb(73, 71, 71);
+    padding-bottom: 10px;
+}
+.speech{
+    text-align:center;
+    background-color:rgb(26, 197, 206);
+    color:white;
+}
+.speech p:first-child{
+    font-size:25px;
+    padding-top:5%;
+    padding-bottom: 2%;
+}
+.speech .speech-world{
+    padding: 3% 0;
+}
+.img2{
+    padding:5% 0;
+}
+.img2 img{
+    padding:0 6.5%;
+}
+.form{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5% 0;
+}
+.form > div{
+    width:75%;
+}
+.form p{
+    padding : 3%;
+}
+.form input{
+    margin: 10px 10px;
+}
+.form form input:first-child,input:nth-child(2){
+    width:300px;
+    padding:10px 10px;
+}
+.form form input:nth-child(3){
+    width:600px;
+    padding:10px 10px;
+}
+.form textarea{
+    width:600px;
+    height:300px;
+    padding:10px 5px;
+}
+.form input,textarea{
+     margin:10px 0;
+     border: 1px solid gray;
+     border-radius:5px;
+}
+button{
+    background-color:rgb(99, 146, 126);
+    color:white;
+    height:50px;
+    width:150px;
+    margin:20px 0;
+}
+footer{
+    background-color:black;
+    color:white;
+}
+footer .foot, .left, .right{
+    display:flex;
+    padding:5% 0;
+}
+footer a{
+    text-decoration:none;
+    color:white;
+}
+.left{
+    width:70%;
+}
+.right{
+    width:30%
+}
+.right .trai, .giua,.phai{
+    padding:10px 10px;
+}
+.logo-home{
+    margin-left: 30px;
+}
+.nav-menu-home{
+    margin-left: 60%;
+}
+.content2 {
+    text-align: center;
+    margin: auto;
+    padding: 3% 0;
+}
+.content2-p > h2, .content2 > p{
+    padding: 1.5% 0;
+}
+.about-banner{
+    background-image: url(./anh/about\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:400px;
+    text-align: center;
+    color:white;
+    padding:9% 0;
+}
+.about-banner > h1{
+    font-size:35px;
+    padding-bottom: 2%;
+}
+.aboutme .aboutme-content,
+.light .light-content,
+.contact .contact-content{
+    display:flex;
+    background-color: rgb(235, 243, 243);
+}
+.aboutme-content > img{
+    margin-left:2px;
+}
+.abm-p > h2, .abm-p > p, .abm-p > img{
+    padding : 5% 0;
+}
+.light-content > img{
+    width:50%;
+}
+div > h2{
+    padding: 5% 0;
+}
+table {
+    margin-left: 0;
+}
+table tr>td:nth-child(2){
+    color: gray;
+    font-weight: lighter;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.project-dieu_huong{
+    margin: 5% 0;
+}
+.project-dieu_huong a{
+    text-decoration: none;
+}
+.project-dieu_huong >div{
+    display:flex;
+    justify-content: space-between;
+}
+.form-contact{
+    width:50%;
+}
+
+iframe{
+    width:100%;
+}
+.map {
+    padding: 5% 0;
+}

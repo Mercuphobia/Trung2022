@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+           .demo{
+               text-align: center;
+               padding: 15px;
+           }
+           .tieude{
+               text-transform:uppercase
+           }
+           .pikachu{
+               width: 20px;
+               height:2px;
+               background-color:aqua;
+           }
+           .nav01 a{
+               text-decoration: none;
+               justify-content: center;
+               padding: 10px;
+               margin: 10px;
+               text-align: center;
+               color: gray;
+           }
+           .nav01 a.active{
+               color: aqua;
+           }
+           .flex-container{
+               display: flex;
+               flex-direction: row;
+               background-color: white;
+               justify-content: center;
+           }
+           .flex-container > div {
+               background-color: rgb(14, 165, 14);
+               width: 300px;
+               margin: 5px;
+               color: white;
+               text-align: center;
+               line-height: 150px;
+           }
+       </style>
+    </head>
+    <body>
+       <nav class="demo">
+        <h1 class="tieude">My portfolio</h1>
+        <hr class="pikachu">
+        <div class="nav01">
+            <a class="active" href="home">Home</a>
+            <a href="web">Web App</a>
+            <a href="UI">UI/UX</a>
+            <a href="graphics">Graphics Design</a>
+            <a href="moblie">Moblie App</a>
+            <a href="branding">Branding</a>
+            <a href="marketing">Marketing</a>
+            
+        </div>
+       </nav>
+        <br>
+        <br>
+        <br>
+        <div class="flex-container">
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+          </div>
+          <div class="flex-container">
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+          </div>
+          <div class="flex-container">
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+            <div>Học Web Chuẩn</div>
+          </div>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .dropdown-content {
+            display: none;
+            background-color: red;
+            width: 160px;
+            box-shadow:  0px 8px 16px 0px blue;
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .h1 {
+            margin: 0;
+        }
+
+        .menu {
+            margin: 0;
+            background-color: aquamarine;
+            width: 120px;
+            display: none;
+        }
+
+        .nav-menu:hover .menu {
+            display: block;
+        }
+
+        .demo {
+            height: 200px;
+            background-color: #90d5ec;
+            background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+
+        }
+
+        .text01 {
+            text-shadow: 10px 10px 5px blue;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #90d5ec;
+            margin-top: 20px;
+            box-shadow: -10px -10px 4px grey;
+        }
+        @font-face {
+            font-family:VNI-Thuphap2 ;
+            src: url(./VNI-Thuphap2.ttf);
+        }
+        .test02{
+            width:100px;
+            height:100px;
+            display:inline-block;
+            background-color: aquamarine;
+            transition: all 5s,height 10s, background-color 4s;
+        }
+        .test02:hover{
+            width:400px;
+            height:300px;
+            background-color:#fc575e;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./anh.jfif" alt="" style="opacity:0.5">
+    <br>
+    opacity: làm mở ảnh.
+    -Dropdown: thường dùng cho hover - bấm vào hiển thị ra.Thường dùng cho menu.
+    <br>
+    <br>
+    <br>
+    <div class="dropdown">
+        Nội dung của thẻ cha
+        <div class="dropdown-content">Nội dung trẻ con</div>
+        <br>
+    </div>
+    <br>
+    <nav class="nav-menu">
+        <h1>Menu</h1>
+        <ul class="menu">
+            <li><a href="">1</a> </li>
+            <li><a href="">2</a> </li>
+            <li><a href="">3</a> </li>
+        </ul>
+    </nav>
+    <br>
+    <div class="demo">
+        hello world
+    </div>
+
+    dổ bóng
+    có 2 loại
+    bóng của text
+    bóng của shadown
+
+    <h1 class="text01">TEXT01-thông só thứ nhất từ trái qua phải,từ trên xuống,(đọ làm mở-có thể có hoặc ko), màu của dổ
+        bóng </h1>
+
+    <div class="box">
+    </div>
+    <p style="white-space:nowrap;border: 2px solid red;width:300px;overflow:scroll ;">Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Veritatis natus repudiandae tenetur ut quas error
+        quisquam dolore sint cumque hic quaerat itaque architecto molestiae fuga nobis, eos tempora in officiis.</p>
+
+    white-space dồn tất cả nội dung lên 1 hàng;
+    <p style="font-family:VNI-Thuphap2;font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam consequatur eaque quia ducimus in!</p>
+
+    <div class="test02">
+    </div>
+</body>
+
+</html>

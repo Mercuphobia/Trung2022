@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div > .demo{
+
+            }
+            div > span > i{
+                color: red;
+            }
+            .therongnoi p{
+                color:green;
+            }
+            .kten1 ~ p{
+                color: red;
+            }
+            .kten2 + p{
+                color: blue;
+            }
+            .text::after {
+                content: "helo guy"
+            }
+            .C2 > p:first-child {
+                color:aquamarine
+
+            }
+            .C2 > p:nth-child(3),:nth-child(4){
+                font-size: 20px;
+                color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        combinator: chọn đúng thẻ mình mong muốn 
+        thẻ có class hay id thì gọi style phải đúng cú pháp
+        <div>
+            Hello
+            <div clas="demo">World</div>
+        </div>
+        <div>
+            <span>1</span>
+            <span><i>2</i></span>
+            <span>3</span>
+        </div>
+
+        khi có các thẻ cỏ cùng bậc trong một thẻ to thì khi style space thì cùng ăn 
+        
+        <div class="theongnoi">
+            <span>
+                thẻ cha
+                <p>thẻ p con</p>
+            </span>
+            <div>
+                <p>thẻ p con</p>
+            </div>
+        </div>
+        ví dụ về dấu ~: ăn tất thẻ cạnh nó có tên đc gọi trong style
+        <div class="kten1">
+        </div>
+        <p>LE DUC TRUNG</p>
+        <p>LE DUC TRUNG</p>
+        <p>LE DUC TRUNG</p>
+        <p>LE DUC TRUNG</p>
+        <p>LE DUC TRUNG</p>
+
+    </div>
+    ví dụ về dấu +: ăn thẻ ngay cạnh nó
+    <div class="kten2">
+    </div>
+    <p>LE DUC TRUNG</p>
+    <p>LE DUC TRUNG</p>
+    <p>LE DUC TRUNG</p>
+    <p>LE DUC TRUNG</p>
+    <p>LE DUC TRUNG</p>
+
+    <br>
+        pseudo classes
+        tạo lớp phủ cho nội dung trước sau;
+        chũ after dc them vào k bôi đên đc
+        muốn buôi dên đc dùng before<br>
+        muốn style cho nó thì dùng background color<br>
+        để tránh copy
+        
+        <div class="text">
+            hello world
+        </div>
+
+        <br>
+        <br>
+        pseudo element: dùn để chọn anh ae trong nhà thay vì đặt tên class
+        <br>
+        <div class="C2">
+            <p>Trung </p>
+            <p>Thăng </p>
+            <p>Tuấn Anh</p>
+            <p>BÌnh </p>
+            <p>An </p>
+            <p>Tú anh</p>
+            <p>Minh</p>
+        </div>
+
+
+    </body>
+</html>

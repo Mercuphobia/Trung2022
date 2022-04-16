@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body onclick="document.getElementById('text').style.backgroundColor = 'unset' ">
+        <img 
+            id="img01" 
+            src="./anh/anh3.png" 
+            width="500px" 
+            onmouseover="this.style.width = '700px' "
+            onmouseleave="document.getElementById('img01').style.width ='500px'"
+        />
+        có thể thay bằng this cho ngắn gọn.<br>
+        cách làm thứ 2 <br>
+        <img 
+            id="img01" 
+            src="./anh/anh3.png" 
+            width="500px" 
+            onmouseover="largeImg(this)"
+            onmouseleave="normalImg(this)"
+        />
+        <h1 
+            id="name"
+            onmouseover="change(this)"
+            onmouseleave="back(this)"
+        >Lê Đức Trung
+        </h1>
+
+        <input id="text"
+        type="text" 
+        onkeydown="this.style.backgroundColor ='red'"
+        onkeyup="this.style.backgroundColor = 'blue'" 
+        onkeypress="this.style.backgroundColor ='yellow'"
+        />
+
+        <select id="test" onchange="myonChange(this)">
+            <option value="Audi-300">Audi</option>
+            <option value="BMW-200">BMW</option>
+            <option value="RR-100">RR</option>
+        </select>
+        <p id="choose"></p>
+
+        <script>
+            function largeImg(a) {
+                a.style.width = "700px"
+            }
+            function normalImg(b) {
+                b.style.width = "200px"
+            }
+            function change(a){
+                a.innerHTML = "MERCUPHOBIA";
+                a.style.color="red";
+                a.style.fontSize = "30px";
+                a.style.backgroundColor ="aqua";
+                
+            }
+            function back(b){
+                b.innerHTML = "Lê Đức Trung";
+                b.style.color="black";
+                b.style.backgroundColor = "unset";
+            }
+            function myonChange(a){
+                document.getElementById("choose").innerHTML = "Selected: " + a.value;
+            }
+
+        </script>
+    </body>
+</html>

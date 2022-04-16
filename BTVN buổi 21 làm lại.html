@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 21 làm lại</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <label>Tên món ăn</label>
+            <input  id="ten" >
+        </tr>
+        <tr>
+            <label>gia</label>
+            <input  id="gia" >
+        </tr>
+    </table>
+    <div id="container">
+        <button id="out" onclick="AddData()">Add</button>
+        <h1>thêm thực đơn và báo giá</h1>
+        <p id="in1"></p>
+        <p id="in2"></p>
+    </div>
+    <script>
+       var food = [
+            {
+                name: "phở",
+                cost: "30k",
+            },
+            {
+                name: "cơm tấm",
+                cost: "35k",
+            },
+        ];
+            var data = [];
+            for(var i=0; i<food.length; i++){
+                var d = '<div style="border:2px solid black; display:inline-block; margin: 0 20px ">'
+                       + '<p>' + 'Tên món ăn: ' + food[i].name +'</p>'
+                       + '<p>' + 'Giá món ăn: ' + food[i].cost +'</p>' + '</div>';
+                document.getElementById('in1').insertAdjacentHTML('beforeend',d);
+            }
+        function AddData(){
+            var a = document.getElementById("ten").value ;
+            var b = document.getElementById("gia").value;
+            var c =
+                {
+                    name: a,
+                    cost: b,
+                }
+            if(a==0 && b==0){
+                alert("bạn cần nhập tên và giá của món ăn");
+            }
+            else if(a==0){
+                alert("bạn cần nhập tên món ăn")
+            }
+            else if(b==0){
+                alert("bạn cần nhập giá cho món ăn");
+            }
+            else{
+                this.food.push(c);
+                for(var i=food.length-1; i<=food.length; i++){
+                var d = '<div style="border:2px solid black; display:inline-block; margin: 0 20px ">'
+                       + '<p>' + 'Tên món ăn mới: ' + food[i].name +'</p>'
+                       + '<p>' + 'Giá món ăn: ' + food[i].cost +'</p>' + '</div>';
+                document.getElementById('in2').insertAdjacentHTML('beforeend',d);
+                document.getElementById('ten').value = null;
+                document.getElementById('gia').value = null;
+                }
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>

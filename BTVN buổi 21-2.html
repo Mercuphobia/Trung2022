@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <label>Tên món ăn</label>
+            <input  id="ten" >
+        </tr>
+        <tr>
+            <label>gia</label>
+            <input  id="gia" >
+        </tr>
+    </table>
+    <div id="container">
+        <button id="out" onclick="AddData()">Add</button>
+        <h1>thêm thực đơn và báo giá</h1>
+        <p id="in1"></p>
+        <p id="in2"></p>
+        <p id="in3"></p>
+    </div>
+    <script>
+        var food = [
+            {
+                name: "phở",
+                cost: "30k",
+            },
+            {
+                name: "cơm tấm",
+                cost: "35k",
+            },
+        ];
+        var data = [];
+        var list = this.data;
+
+        for(var i=0; i<food.length; i++){
+            var table = "<div>";
+            for(var i=0; i< food.length; i++){
+                table += "<p style='border: 2px solid black; width: 100px; display: inline-block; margin: 20px'>";
+                table += 'Tên : ' + food[i].name + '<br>';
+                table += 'Giá : ' + food[i].cost + '<br>';
+                table += "</p>"
+            }
+            table += "</div>" ;
+            document.getElementById("in1").innerHTML = table;
+        }
+        function AddData(){
+            var ten = document.getElementById('ten').value;
+            var gia = document.getElementById('gia').value;
+            var item = {
+                name: ten,
+                cost: gia,
+            };
+            
+           
+           
+            if(ten || gia != 0){
+                this.data.push(item);
+                for(var i=0; i<list.length; i++){
+                    var table = "<div>";
+                    for(var i=0; i< list.length; i++){
+                        table += "<p style='border: 2px solid black; width: 100px; display: inline-block; margin: 20px'>";
+                        table += 'Tên : ' + list[i].name + '<br>';
+                        table += 'Giá : ' + list[i].cost + '<br>';
+                        table += "</p>"
+                    }
+                    table += "</div>" ;
+                    document.getElementById("in3").innerHTML = table;
+                }
+            }
+            else {
+                list.length--;
+                alert("bạn cần nhập tên và giá cho sản phẩm");
+            }
+        }
+    </script>
+</body>
+</html>

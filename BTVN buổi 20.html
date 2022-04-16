@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #container{
+            text-align:center;
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+        }
+        button{
+            margin: 5% 0;
+            border-radius: 5px;
+        }
+        input{
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="count-box">
+            <h1>Còn thở là còn gỡ</h1>
+            <div id="count">***</div>
+            <p>Nhập ngẫu nhiên các số từ 0-9</p>
+            <input id="number" type="text">
+            <br>
+            <button id="reset-btn" onclick="random()">Chọn số</button>
+        </div>
+        <p id="unlucky" style="display:none">Ngã ở đâu gấp đôi ở đấy</p>
+        <p id="lucky" style="display:none">đúng rồi nè- chơi tiếp đi</p>
+    </div>
+    <script>
+        
+        
+        function random(){
+            debugger
+            var x = document.querySelector('#number').value;
+            var a = document.querySelector('#count').innerHTML = Math.floor(Math.random()*10);
+            if( x.length == 0){
+                alert("bạn cần nhập số");
+            }
+            else {
+                if(Number(x)!=a){
+                    document.getElementById("unlucky").style.display = "block";
+                    document.getElementById("lucky").style.display = "none";
+                }
+                else {
+                    document.getElementById("lucky").style.display = "block";
+                    document.getElementById("unlucky").style.display = "none";
+                }
+            }  
+        }
+    </script>
+</body>
+</html>

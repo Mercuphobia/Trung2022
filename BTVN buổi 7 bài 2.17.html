@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            font-size: 23px;;
+        }
+        .tieude{
+            color:orange;
+            text-align:center;
+        }
+        .chuto{
+            float:left;
+            border: 2px groove rgb(177, 98, 14);
+            background-color:rgb(221, 170, 75);
+            font-size: 75px;
+            padding: 10px;
+            
+
+        }
+        .anh{
+            float:right;
+            width:250px;
+            padding:10px
+           
+        }
+        .layer{
+            display:flex;
+        }
+        .anhien{
+            border: 10px ridge green;
+            width: 300px;
+            height : 200px;
+            font-size: 15px;
+            position:absolute;
+            top: 200px;
+            left: 300px;
+            background-color: rgb(128, 175, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="tieude">
+        Bông điên điển
+        Món ngon mùa nước nổi
+    </h1>
+   <div class="layer">
+    <div class="meow">
+        <img class="anh" src="./anh/AnhLon.png" id="anh" 
+        onmouseover="hien()"
+        onmouseleave="mat()" >
+        <span class="chuto" style="color:rgb(129, 88, 13)">M</span>ỗi năm, cứ vào đầu mùa nước nổi, nơi các bờ sông, bờ ruộng, những cây điềm điềm chết héo từ những tháng ngày tự
+        nhiên xanh tươi trở lại làm đẹp thêm phong cảnh Đồng bàng sông Cửu Long. Chừng một vài tháng sau, khi con nước tràn
+        ngập các bờ sông, bờ ruộng, cũng là lúc điên điển trổ đầy cành những đóa hoa vàng rực màu nắng phương Nam, phất phơ
+        trong ngọn gió hoặc rũ oằn trong những cơn mưa.
+        <br>
+        <br>
+        Trước đây không lâu, người nông dân ngèo khổ dùng bông điên diển nấu cháo cầm cự với con đói của những ngày không có
+        khả năng kiếm được tiền. Ngày nay, với những người ngèo, bông điên điển giúp họ có thêm thu nhập bên cạnh việc đánh
+        bắt cá, tép trên những cánh đồng trắng xóa một màu nước nổi. Nhưng để trở thành món ngon, cách giản dị nhất là người
+        ta đùng bông điên diển làm dưa. Chỉ cần ngâm bông điển điển đã lặt rửa sạch với giá sông trong nước mối có độ mặn
+        vừa chuẩn, chừng ba ngày sau là đã có một đĩa dưa vừa chua vừa giòn chám với nước tương giấm ớt ăn đã ngon mà chấm
+        với cá hoặc thịt kho lại càng ngon hơn./<br>
+        ......
+    </div>
+
+    <div class="anhien" style="display:none" id="anhien1">
+        <ul>Hương vị miền Nam
+            <li>Bánh tráng Mỹ Lồng; bánh phồng Sơn Đốc</li>
+            <li>Dồi lươn rim nước cốt dừa</li>
+            <li>Bún mắm</li>
+            <li>Bún nước lèo Sóc Trăng</li>
+            <li>Nem lai Vung</li>
+            <li>Cốm dẹp</li>
+            <li>Bưởi Tân Triều</li>
+        </ul>
+    </div>
+   </div>
+
+   <script>
+       function hien(){
+           document.getElementById("anhien1").style.display = "inline";
+       }
+       function mat(){
+            document.getElementById("anhien1").style.display = "none"   
+       }
+   </script>
+            
+    
+</body>
+
+</html>

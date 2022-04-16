@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        JS bao gồm:
+        + Selector: chọn
+        + Get/set: lấy giá trị thằng đã chọn và gán.
+        + Even: bát sư kiện (tạo sụ tương tác giữa các thẻ hoặc với người dùng) 
+        + Style JS 
+        + Tạo quy trình hành động
+
+        JS có 3 cách viết giống CSS 
+        _ cách 1 viết thẳng JS vào trong thẻ 
+        _viết vào thẻ script 
+        _ viết vào JS riêng luôn và bỏ vào bài thông qua đương dẫn 
+
+        <div id="demo">Hello world</div>
+        <h1 id="test">Học viện công nghệ bưu chính viễn thông</h1>
+        <p> giá trị hello world đã bị thay đổi thành hi world</p>
+        <h3 id="test01">THPT Cổ Loa</h3>
+        <input type="submit" onclick="document.getElementById('test01').innerHTML = 'ok baby' ">
+
+
+        <script>
+            // DOM SELECTOR : chọn thẻ tương tác
+            document.getElementById("demo")
+            // DOM HTML : lấy hoặc gán giá trị
+            // có 3 loại lấy giá trị html inner, value
+
+            document.getElementById("demo").innerHTML = "Hi world";
+            document.getElementById("test").innerHTML = "học viện bưu điện";
+            // in ra có 3 cách cách mọt là thay đổi giá trị thẻ cũ, c2 là in ra một giá trị
+            document.write("inn ra đc màn hình nhưng k tính là một thẻ");
+            document.getElementById("test01").innerHTML = "Hông bé ơi e k flow a mà đòi xin in4 của anh";
+            document.write("hello các bạn nhỏ");
+            document.write("<h3>" + " pokemon" + "</h3>");
+            console.log("key stone");//in trong console để dùng trong console
+
+            // java statement: kn biế =n dùng để lưu trữ giá trị và có thể thay thế đc
+            // tạo biến dùng var
+            var a = 2;
+            document.write(a);
+            var b, c, d;
+            b = 10;
+            c = 20;
+            d = c + b;
+            document.write(d);
+            var e=10;
+            e++;
+            document.write(e);
+
+            // value : string, number, boolean, array, object, variable
+
+            //Assigment
+            var x = 5;
+            x += 2;
+            console.log(x)
+
+            x %= 2;
+            console.log(x)
+            // function : hàm
+            function hoatdong() {
+                document.write("<br>" + "hello" + " ");
+                var k =20;
+                document.write(k+20);
+            }
+            hoatdong();
+            // DOM Event: onCLick, onChange,....VD là nút submit ở trên
+        </script>
+    </body>
+</html>

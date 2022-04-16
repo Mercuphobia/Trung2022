@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #test {
+            display: block;
+        }
+
+        #test:hover {
+            display: none
+        }
+        .clearfix{
+            border: 3px solid green;
+            padding: 5px;
+            overflow: auto;
+            /* cái này để sửa lại lỗi float: right bị tràn ra ngoài */
+        }
+        .img{
+            float:right;
+        }
+        .demo{
+            background-color:aquamarine;
+            display: inline-block;
+            padding: 10px;
+            position: relative;
+            top: 20;
+            left: 90px;
+        }
+        .demo1{
+            background-color:aquamarine;
+            display: inline-block;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: -50px;
+        }
+        .demo2{
+            background-color:aquamarine;
+            display: inline-block;
+            padding: 10px;
+            position: fixed;
+            top: 100px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin: auto; width: 80%;height: 200px; border: 2px solid red; display:flex; justify-content:center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quasi animi odio. Quam esse necessitatibus
+        consectetur! Rerum corrupti magnam illo?
+    </div>
+    nếu dùng margin auto thì phải để bé hơn 100% thì nó mới ăn(vì thẻ div là block nên xét nó nhỏ lại mới ăn)
+
+    CSS layout
+    margin
+    padding
+    float
+    Position
+    Transform
+    Flex-box : dùng nhiều nhất.
+    Grid
+
+    <div style="background-color:aqua"> Hello trung thẻ này chiếm hết một hàng</div>
+    <span style="background-color:aquamarine">thẻ inline này chỉ chiếm đúng bằng nội dung ở trong nó</span>
+
+    <p style=" display:inline;background-color:aquamarine;display:inline">thẻ inline này cx có thể đổi thành thẻ block
+        thông qua display-inline thẻ blck thì ngược lại</p>
+    <i style="display:block;background-color:aqua"> ầhlfhas</i>
+    inline margin chỉ ăn trái phải
+    khi thẻ inline chuyển thành inline-block thì ăn 4 cạnh lai cảu cả thuộc tính inline và block.
+    <p style="display:inline-block;background-color:aquamarine; margin: 15px;">Lê Đức Trung</p>
+
+    <p style="display:none">biến mất luôn không còn hiện nữa</p>
+    <p>Trung</p>
+    <p style="visibility: hidden;">chỉ ẩn đi và không biến mất</p>
+    <p>Hêlllp</p>
+    khi dùng thẻ inline thì hover k ăn
+    <p id="test" style=" padding : 70px; border: 2px solid blue">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ratione sapiente illo consectetur nulla. Assumenda,
+        unde! Quasi vel excepturi nihil explicabo!
+    </p>
+
+    <div style="display: inline-block;padđing: 100px; background-color: red"> 1</div>
+    <div style="display: inline-block;padđing: 100px; background-color: blue"> 2</div>
+    <div style="display: inline-block;padđing: 100px; background-color: green"> 3</div>
+    <div style="display: inline-block;padđing: 100px; background-color: yellow"> 4</div>
+    như này thì có lỗ hổng ở giữa các thẻ
+    còn dùng float thì k.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="float:left ;padding:100px; background-color: blue"> 2</div>
+    <div style="float:left ;padding: 100px; background-color: green"> 3</div>
+    <div style="float:left ;padding: 100px; background-color: red"> 4</div>
+    như này là bị float tác động thì có thể nhét bọn float vào một thẻ rồi overflow để thẻ sau k bị tác động.
+    <div>HỌC viện công nghệ bưu chính viễn thông</div>
+
+    khỉ dùng thẻ float(bị chuyển thành inline dồn vào nhau) lên một thẻ ảnh thì nó hay bị tràn ra khỏi thẻ thì ta dùng overflow vào thẻ cha để nó nằm trong
+    thẻ cha.
+    <div class="clearfix">
+        <img class="img" src="./anh.jfif" width="170px" height="170px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus at cumque, error minima possimus nemo
+        voluptatibus dolorem ratione delectus nobis...
+    </div>
+    position đc dùng nhiều trong css thỉnh thoảng layout : nó di chuyển cái thẻ đc dùng <br>
+    -3 thuộc tính hay dùng<br>
+    + relative:  di chuyển 2 cạnh top left<br>
+    nó tính từ vị trí nó đang đứng<br>
+    +absolute: 4 cạnh top left right bottom<br>
+    nếu cả  bằng 0 thì phủ hết <br>
+    absolute tính từ body chứ k phải vị trí nó đang ở;<br>
+    +fixed: 4 vị trí top left right bottom nhưng nó đi theo mình khi lăn chuột đi đâu<br>
+    * có thể dùng relative dể khóa một thẻ ở trong một thẻ khác bằng cách relative cho thằng cha<br>
+     còn thằng kai absolute để chỉnh vị trí của nó ở trong thẻ cha.<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="demo">HỌC viện công nghệ bưu chính viễn thông</div>
+    <br>
+    <div class="demo1">HỌC viện công nghệ bưu chính viễn thông</div>
+    <br>
+    <div class="demo2">HỌC viện công nghệ bưu chính viễn thông</div>
+</body>
+
+</html>
